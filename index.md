@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Welcome to My Stories!
 
 Here are all the stories I've written so far:
