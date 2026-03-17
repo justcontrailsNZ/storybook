@@ -4,7 +4,6 @@ title: "Theseus and the Minotaur"
 ---
 
 
-Theseus and the Minotaur
 
 Long ago in Ancient Greece, the city of Athens had a serious problem. Every few years, Athens had to send a group of young people across the sea to the island of Crete. It was a sad payment to the powerful King Minos of Crete.
 
