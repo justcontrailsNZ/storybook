@@ -3,7 +3,6 @@ layout: post
 title: "Perseus and Medusa"
 ---
 
-Perseus and Medusa
 
 Long ago, there was a young man named Perseus. He lived quietly with his mum and tried to stay out of trouble.
 
