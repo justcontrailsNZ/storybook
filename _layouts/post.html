@@ -80,8 +80,8 @@
     <div class="story-container">
         <h1>{{ page.title }}</h1>
         
-        <!-- UPDATED, STRONGER IMAGE LINK -->
-        <img src="https://image.pollinations.ai/prompt/cute-childrens-storybook-illustration-of-{{ page.title | slugify }}?width=800&height=400" alt="Story Illustration" class="story-image" onerror="this.style.display='none'">
+        <!-- NEW IMAGE LINK -->
+        <img src="https://image.pollinations.ai/prompt/A%20cute%20childrens%20storybook%20illustration%20of%20{{ page.title | cgi_escape }}" alt="Illustration of {{ page.title }}" class="story-image">
 
         <div class="controls">
             <button onclick="changeTextSize(4)">Make Text Bigger ➕</button>
