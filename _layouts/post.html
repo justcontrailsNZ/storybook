@@ -29,7 +29,6 @@
             text-align: center;
             font-size: 40px;
         }
-        /* The automatic picture frame */
         .story-image {
             width: 100%;
             max-height: 400px;
@@ -81,8 +80,8 @@
     <div class="story-container">
         <h1>{{ page.title }}</h1>
         
-        <!-- THIS IS THE MAGIC AI PICTURE LINK -->
-        <img src="https://image.pollinations.ai/prompt/cute%20childrens%20storybook%20illustration%20of%20{{ page.title | url_encode }}?width=800&height=400&nologo=true&seed=42" alt="Automatic Story Illustration" class="story-image">
+        <!-- UPDATED, STRONGER IMAGE LINK -->
+        <img src="https://image.pollinations.ai/prompt/cute-childrens-storybook-illustration-of-{{ page.title | slugify }}?width=800&height=400" alt="Story Illustration" class="story-image" onerror="this.style.display='none'">
 
         <div class="controls">
             <button onclick="changeTextSize(4)">Make Text Bigger ➕</button>
