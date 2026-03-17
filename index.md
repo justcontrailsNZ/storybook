@@ -4,7 +4,7 @@ layout: default
 
 # Welcome to My Stories!
 
-Here are all the stories I've written so far:
+These stories were AI-generated.
 
 <ul>
   {% assign sorted_posts = site.posts | sort: 'title' %}
