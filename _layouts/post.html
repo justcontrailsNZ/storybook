@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        /* This section makes everything look pretty */
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            background-color: #f4fce8; /* Soft green background */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .story-container {
+            background: white;
+            max-width: 800px;
+            width: 90%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        h1 {
+            color: #ff6b6b; /* Friendly red/pink title */
+            text-align: center;
+            font-size: 40px;
+        }
+        .story-content {
+            font-size: 20px; /* Starting text size */
+            line-height: 1.8;
+            transition: font-size 0.3s ease; /* Makes sizing smooth */
+        }
+        .controls {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #eee;
+        }
+        button {
+            background-color: #4ecdc4; /* Teal buttons */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background-color: #45b7aa;
+        }
+        .back-link {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="story-container">
+        <h1>{{ page.title }}</h1>
+        
+        <!-- These are your text size buttons -->
+        <div class="controls">
+            <button onclick="changeTextSize(4)">Make Text Bigger ➕</button>
+            <button onclick="changeTextSize(-4)">Make Text Smaller ➖</button>
+        </div>
+
+        <!-- This is where your Markdown story magically appears -->
+        <div class="story-content" id="story-text">
+            {{ content }}
+        </div>
+
+        <a href="{{ site.baseurl }}/" class="back-link">⬅ Back to Home</a>
+    </div>
+
+    <!-- This is the mini-program that makes the buttons work -->
+    <script>
+        const storyText = document.getElementById('story-text');
+        let currentSize = 20; // Starting size
+
+        function changeTextSize(change) {
+            currentSize += change;
+            // Set limits so it doesn't get crazy big or invisible
+            if (currentSize > 60) currentSize = 60;
+            if (currentSize < 14) currentSize = 14;
+            storyText.style.fontSize = currentSize + 'px';
+        }
+    </script>
+
+</body>
+</html>
