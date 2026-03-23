@@ -5,6 +5,7 @@ title: "Apollo and Daphne"
 
 <div style="background: #fffaf0; padding: 20px; border-radius: 30px; border-left: 12px solid #ffb347;">
 
+
 Long ago, the god **Apollo** was known for many things: music, archery, and bright sunlight. Apollo was proud of his talents and liked to win.
 
 One day, Apollo made fun of another god, **Eros**, who used small arrows to spark feelings in people.
