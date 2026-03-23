@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Myth of Apollo and Daphne"
+title: "Apollo and Daphne"
 ---
 
 # 🌞🏹 The Myth of Apollo and Daphne 🌿🏹
