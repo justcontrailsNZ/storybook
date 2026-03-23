@@ -3,12 +3,13 @@ layout: post
 title: "Arachne and the Weaving Contest"
 ---
 
+# 🧵🕷️ Arachne and the Weaving Contest 🧵🕷️
 
-Long ago, in a small Greek town, there lived a young woman named Arachne. Arachne was an amazing weaver. She could turn thread into cloth with patterns of flowers, birds, and waves.
+Long ago, in a small Greek town, there lived a young woman named **Arachne**. Arachne was an amazing **weaver** (someone who makes cloth from thread). She could turn thread into cloth with patterns of flowers, birds, and waves.
 
 People travelled from far away just to see her work.
 
-“This is the best weaving I’ve ever seen,” they said.
+> “This is the best weaving I’ve ever seen,” they said.
 
 Arachne smiled and said, “Of course it is. I’m the best weaver in the world.”
 
@@ -18,14 +19,17 @@ But Arachne tossed her head. “Athena didn’t teach me,” she said. “My han
 
 Those words spread through the town—right up to the ears of Athena.
 
-A visitor arrives
+---
+
+## 👵 A Visitor Arrives
+
 One afternoon, an old woman came to Arachne’s house and watched her work.
 
-“You are talented,” the old woman said. “But you should speak with respect about the gods.”
+“You are talented,” the old woman said. “But you should speak with **respect** (polite care for others) about the gods.”
 
-Arachne kept weaving. “I don’t need advice,” she replied. “Tell Athena to come here and compete if she’s so great.”
+Arachne kept weaving. “I don’t need advice,” she replied. “Tell Athena to come here and **compete** (have a contest) if she’s so great.”
 
-The old woman’s eyes sharpened. In a blink, she was no old woman at all. She became Athena, tall and bright, wearing a helmet and carrying a spear.
+The old woman’s eyes sharpened. In a blink, she was no old woman at all. She became **Athena**, tall and bright, wearing a helmet and carrying a spear.
 
 “I am here,” Athena said. “Do you still want a contest?”
 
@@ -33,7 +37,10 @@ Arachne’s face turned pale. But she was too proud to back down.
 
 “Yes,” Arachne said. “I do.”
 
-The contest begins
+---
+
+## 🏆 The Contest Begins
+
 Athena and Arachne set up two looms side by side. A crowd gathered quietly, not sure what would happen.
 
 Athena’s weaving was perfect. Her lines were straight. Her colours were strong. Her picture showed people learning, building, and working together wisely.
@@ -50,8 +57,11 @@ Athena’s voice became cold. “Your hands are talented,” she said, “but yo
 
 Arachne’s cheeks burned. “I’m not scared of you!” she snapped.
 
-Arachne’s choice
-Arachne suddenly felt worried. She realised she had pushed too far, and pride had made her unkind and rude.
+---
+
+## 😔 Arachne’s Choice
+
+Arachne suddenly felt worried. She realised she had pushed too far, and **pride** had made her unkind and rude.
 
 In some versions of the myth, Arachne felt ashamed and wished she could disappear.
 
@@ -59,23 +69,46 @@ Athena did not want Arachne to waste her talent. But Athena also wanted Arachne 
 
 She said, “You will keep weaving. You will always remember what pride can do.”
 
-And Arachne was changed into a spider, a creature that weaves threads every day.
+And Arachne was changed into a **spider**, a creature that weaves threads every day.
 
-Why people remember it
+---
+
+## 💡 Why People Remember It
+
 Greek people told this story to remind themselves of two things:
 
-Being talented is wonderful.
-But being respectful and humble matters too.
+> **Being talented is wonderful.**  
+> **But being respectful and humble matters too.**
+
 Arachne could weave beautifully, but her pride made her speak in a way that caused trouble.
 
 And even today, when people see a spider web shining with dew, some remember the weaver named Arachne.
 
-Quick glossary: weave (make cloth from thread), contest (a competition), respect (polite care for others), humble (not bragging)
+---
 
-Reading questions:
+✨  ✨  ✨
 
-What was Arachne good at?
-Why did Athena come to visit?
-What problem did Athena see in Arachne’s weaving?
-What happened to Arachne at the end?
-What lesson does this myth teach?
+---
+
+## 📖 Quick Glossary
+
+| Word | Meaning |
+|------|---------|
+| **weave** | make cloth from thread |
+| **contest** | a competition |
+| **respect** | polite care for others |
+| **humble** | not bragging |
+
+---
+
+<details>
+  <summary><strong style="cursor: pointer; font-size: 22px; color: #ff6b6b;">❓ Reading Questions (click to open)</strong></summary>
+
+  <br>
+  1. What was Arachne good at? <br>
+  2. Why did Athena come to visit? <br>
+  3. What problem did Athena see in Arachne’s weaving? <br>
+  4. What happened to Arachne at the end? <br>
+  5. What lesson does this myth teach?
+
+</details>
