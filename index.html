@@ -1,0 +1,422 @@
+---
+# This front matter tells Jekyll to process this file
+layout: default
+title: "Storybook | Tales from Greece and Aotearoa"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Storybook | Tales from Greece and Aotearoa</title>
+  <meta name="description" content="A collection of Greek myths and Māori legends, retold as stories for kids. All stories are AI-generated.">
+  <meta name="theme-color" content="#f9f3e6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=Playfair+Display:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fef7e8;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #2c241a;
+      line-height: 1.5;
+      padding: 2rem 1.5rem;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #b45f2b;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 0 0 4px 0;
+      z-index: 100;
+      font-weight: 500;
+    }
+    .skip-link:focus { top: 0; }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #a55314, #d87c2a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: #5e4b34;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #eeddbb;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    .description {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #5e4b34;
+      background: #fff6ea;
+      padding: 0.8rem 1.5rem;
+      border-radius: 60px;
+      display: inline-block;
+      font-size: 0.95rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #2c241a;
+      color: #fef7e8;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 1rem;
+      transition: background 0.2s ease;
+    }
+    .github-link:hover { background: #4a3727; }
+    .filter-section {
+      margin: 2rem 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      align-items: center;
+    }
+    .search-box {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 0.9rem 1rem 0.9rem 2.8rem;
+      border: 1px solid #e6d5bd;
+      border-radius: 60px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      background: white;
+      transition: all 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .search-box input:focus {
+      outline: none;
+      border-color: #d87c2a;
+      box-shadow: 0 0 0 3px rgba(216,124,42,0.2);
+    }
+    .search-box::before {
+      content: "🔍";
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+    .category-buttons {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .category-btn {
+      background: white;
+      border: 1px solid #e6d5bd;
+      padding: 0.6rem 1.2rem;
+      border-radius: 40px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #5e4b34;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .category-btn.active {
+      background: #d87c2a;
+      border-color: #d87c2a;
+      color: white;
+    }
+    .category-btn:hover:not(.active) {
+      background: #f5e6d8;
+    }
+    .story-count {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #8b7356;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+    .story-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #f1e5d4;
+    }
+    .story-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 30px rgba(0,0,0,0.1);
+      border-color: #e2cfb3;
+    }
+    .card-illustration {
+      height: 100px;
+      background: linear-gradient(145deg, #f8e5cf, #f8f0e3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      transition: background 0.2s;
+    }
+    .story-card:hover .card-illustration {
+      background: linear-gradient(145deg, #fae2c6, #faf0e2);
+    }
+    .card-content {
+      padding: 1.2rem 1.4rem 1.4rem;
+    }
+    .story-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 0.4rem;
+      color: #2c241a;
+    }
+    .story-card p {
+      font-size: 0.85rem;
+      color: #7c6650;
+      margin-top: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .no-results {
+      text-align: center;
+      grid-column: 1 / -1;
+      padding: 3rem;
+      background: #fff6ed;
+      border-radius: 40px;
+      color: #b97f4b;
+    }
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #b7a07e;
+      border-top: 1px solid #eeddbb;
+      padding-top: 2rem;
+    }
+    footer a { color: #b45f2b; text-decoration: none; }
+    @media (max-width: 640px) {
+      body { padding: 1rem; }
+      .header h1 { font-size: 2.4rem; }
+      .story-grid { gap: 1.2rem; }
+      .card-content { padding: 1rem; }
+      .story-title { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to the stories</a>
+  <div class="container">
+    <div class="header">
+      <h1>📖 Storybook</h1>
+      <div class="tagline">Greek Myths & Māori Legends</div>
+      <div class="description">✨ These stories were AI-generated — perfect for young readers and curious minds.</div>
+      <div>
+        <a href="https://github.com/justcontrailsnz/storybook" class="github-link" target="_blank" rel="noopener noreferrer">
+          <span>🐙</span> View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="search-box">
+        <input type="text" id="storyFilter" placeholder="Search for a story..." aria-label="Filter stories by title">
+      </div>
+      <div class="category-buttons">
+        <button class="category-btn active" data-category="all">🌍 All Stories</button>
+        <button class="category-btn" data-category="greek">🏛️ Greek Myths</button>
+        <button class="category-btn" data-category="maori">🌿 Māori Legends</button>
+      </div>
+    </div>
+    <div class="story-count" id="storyCount" aria-live="polite"></div>
+
+    <main id="main-content">
+      <div class="story-grid" id="storyGrid"></div>
+    </main>
+
+    <footer>
+      <p>🌿 A collection of ancient tales from Greece and Aotearoa. Explore, read, and enjoy.<br>
+      Inspired by timeless stories — built with ❤️ for storytelling.</p>
+    </footer>
+  </div>
+
+  <script>
+    // -------------------------------
+    // Data: all posts from Jekyll are injected as a JavaScript array
+    // This is built using liquid to ensure correct titles, URLs, and categories.
+    // -------------------------------
+    const stories = [
+      {% for post in site.posts %}
+        {
+          title: {{ post.title | jsonify }},
+          url: {{ post.url | relative_url | jsonify }},
+          category: {{ post.category | default: "unknown" | jsonify }},
+          emoji: getEmojiByTitle({{ post.title | jsonify }}, {{ post.category | default: "unknown" | jsonify }})
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    // Helper: assign a cute emoji based on title and category
+    function getEmojiByTitle(title, category) {
+      const lower = title.toLowerCase();
+      // Māori specific
+      if (category === "maori") {
+        if (lower.includes('rona')) return '🌙';
+        if (lower.includes('kiwi')) return '🦉';
+        if (lower.includes('māui') || lower.includes('maui')) return '🪢';
+        if (lower.includes('tāne') || lower.includes('tane')) return '🌳';
+        if (lower.includes('hinemoa')) return '🛶';
+        if (lower.includes('matariki')) return '✨';
+        if (lower.includes('kupe')) return '⛵';
+        if (lower.includes('hatupatu')) return '🏃';
+        if (lower.includes('tāwhirimātea')) return '🌬️';
+        if (lower.includes('pōhutukawa')) return '🌸';
+        if (lower.includes('paikea')) return '🐋';
+        if (lower.includes('taniwha')) return '🐉';
+        if (lower.includes('aoraki')) return '🏔️';
+        if (lower.includes('pounamu')) return '💚';
+        return '🌿';
+      }
+      // Greek emojis
+      if (lower.includes('apollo')) return '🌞';
+      if (lower.includes('arachne')) return '🕷️';
+      if (lower.includes('artemis')) return '🏹';
+      if (lower.includes('atalanta')) return '🍎';
+      if (lower.includes('athena')) return '🦉';
+      if (lower.includes('bellerophon')) return '🐎';
+      if (lower.includes('callisto')) return '🐻';
+      if (lower.includes('daedalus') || lower.includes('icarus')) return '🕊️';
+      if (lower.includes('demeter') || lower.includes('persephone')) return '🌾';
+      if (lower.includes('flood')) return '🌊';
+      if (lower.includes('echo') || lower.includes('narcissus')) return '🌸';
+      if (lower.includes('heracles') || lower.includes('hercules')) return '💪';
+      if (lower.includes('hermes')) return '👟';
+      if (lower.includes('iris')) return '🌈';
+      if (lower.includes('midas')) return '👑';
+      if (lower.includes('odysseus')) return '⛵';
+      if (lower.includes('orpheus')) return '🎵';
+      if (lower.includes('pandora')) return '📦';
+      if (lower.includes('perseus')) return '⚔️';
+      if (lower.includes('phaethon')) return '☀️';
+      if (lower.includes('prometheus')) return '🔥';
+      if (lower.includes('sisyphus')) return '⛰️';
+      if (lower.includes('trojan horse')) return '🐴';
+      if (lower.includes('theseus')) return '🏛️';
+      return '📖';
+    }
+
+    // For stories that were rendered on the server, we already have emoji.
+    // But we need to add emoji for each story because liquid computed it above.
+    // The array already includes emoji from the liquid loop, so we can just use it.
+
+    // DOM elements
+    const grid = document.getElementById('storyGrid');
+    const filterInput = document.getElementById('storyFilter');
+    const countSpan = document.getElementById('storyCount');
+    let currentCategory = 'all';
+
+    function render() {
+      const searchText = filterInput.value.toLowerCase().trim();
+      let filtered = stories;
+
+      // Category filter
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(s => s.category === currentCategory);
+      }
+
+      // Search filter
+      if (searchText !== '') {
+        filtered = filtered.filter(s => s.title.toLowerCase().includes(searchText));
+      }
+
+      // Update count
+      countSpan.textContent = `${filtered.length} ${filtered.length === 1 ? 'story' : 'stories'} found`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="no-results">✨ No stories match "${escapeHtml(searchText)}". Try a different word! ✨</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(story => `
+        <a href="${story.url}" class="story-card">
+          <div class="card-illustration">${story.emoji}</div>
+          <div class="card-content">
+            <div class="story-title">${escapeHtml(story.title)}</div>
+            <p>📖 Read tale →</p>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>]/g, function(m) {
+        if (m === '&') return '&amp;';
+        if (m === '<') return '&lt;';
+        if (m === '>') return '&gt;';
+        return m;
+      });
+    }
+
+    // Set up category button listeners
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentCategory = btn.dataset.category;
+        categoryBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render();
+      });
+    });
+
+    // Search input with debounce
+    let debounceTimeout;
+    filterInput.addEventListener('input', () => {
+      clearTimeout(debounceTimeout);
+      debounceTimeout = setTimeout(render, 200);
+    });
+
+    // Initial render
+    render();
+  </script>
+</body>
+</html>
