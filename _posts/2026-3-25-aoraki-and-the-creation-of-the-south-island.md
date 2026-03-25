@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Apollo and Daphne"
+title: "Aoraki and the Creation of the South Island"
 ---
 
 # 🏔️⛵ Aoraki and the Creation of the South Island ⛵🏔️
