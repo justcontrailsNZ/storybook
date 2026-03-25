@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Apollo and Daphne"
-category: greek
 ---
 
 # 🏔️⛵ Aoraki and the Creation of the South Island ⛵🏔️
