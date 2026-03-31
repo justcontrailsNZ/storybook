@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Daedalus and Icarus "
+category: Greek
 ---
 
 
