@@ -5,33 +5,63 @@ title: "Rātā and the Waka"
 
 # 🪓🌳 Rātā and the Waka 🌳🪓
 
-Rātā was a young chief who wanted to build a waka (canoe) to explore the seas. He went into the forest to find a great tree. After searching, he found a magnificent tōtara and cut it down.
+Rātā was a young chief with a bold dream. He wanted to build a great waka (canoe) – one that could carry his people across the ocean, to discover new lands and bring back treasures. He had heard stories of the mighty canoes of his ancestors, and he longed to create something just as grand.
 
-But Rātā was in a hurry. He left the tree where it fell and went home to rest, planning to return the next day.
+One morning, Rātā walked deep into the forest. The trees rose high above him, their branches weaving together like the roof of a meeting house. He searched for hours, pushing through ferns and climbing over fallen logs. Finally, he found it – a magnificent tōtara tree. Its trunk was wide and straight, its bark silver in the sunlight. “This is the one,” Rātā whispered.
+
+He took his stone adze and began to cut. The work was hard, and sweat dripped from his brow. But Rātā was strong, and soon the great tree groaned and fell with a thunderous crash that echoed through the forest.
+
+Rātā was tired, and the sun was setting. “I will finish tomorrow,” he said to himself. He left the tree where it lay and returned to his village to rest.
 
 ---
 
 ## 🌿 The Forest Strikes Back
 
-When Rātā returned, the tree was standing again. Every branch was back in place. Rātā was confused. He cut it down again, but the next morning it was whole once more.
+When Rātā returned the next morning, he stopped in shock. The tōtara tree was standing again – tall and proud, as if it had never been touched. Every branch was back in place. The leaves rustled in the breeze, almost as if the tree was laughing at him.
 
-This happened a third time. Rātā was angry and determined to stay overnight to catch whoever was undoing his work.
+“What trickery is this?” Rātā muttered. He rubbed his eyes, but the tree remained upright. Angry and confused, he took up his adze and cut it down once more. This time, he worked even harder, hacking at the trunk until it fell. He stayed until the sun dipped below the hills, then went home, determined to return early.
+
+But the next morning, the tree was standing again. Same place. Same branches. Same leaves.
+
+Rātā’s face grew hot with anger. “Someone is mocking me!” he shouted. He cut the tree down a third time, his arms aching, his heart burning with frustration. That night, he did not go home. Instead, he hid behind a clump of ferns, his eyes fixed on the fallen tree. “Tonight, I will catch whoever is doing this,” he whispered.
 
 ---
 
 ## 🐜 The Children of Tāne
 
-That night, Rātā hid and watched. As darkness fell, he saw tiny creatures emerge—insects, birds, and spirits of the forest. They were the children of Tāne, the god of the forest.
+The forest grew dark. The wind died down, and the only sound was the drip of dew from the leaves. Rātā’s eyes grew heavy, but he forced himself to stay awake.
 
-They sang a chant and lifted the tree back upright. Rātā realised his mistake. He had cut the tree without asking permission or performing the proper rituals to honour Tāne.
+Then, just before dawn, he saw them.
+
+At first, only a few – tiny insects crawling out from under the bark. Then more: birds fluttering down from the canopy, spiders dropping on silken threads, even the spirits of the forest, pale as mist. They were the children of **Tāne**, the god of the forest. Together, they gathered around the fallen tree.
+
+They began to sing – a soft, ancient chant that made the air hum. As they sang, they lifted the tree, branch by branch, leaf by leaf. They fitted the trunk back onto its stump, smoothed the bark, and reattached every twig. Within minutes, the tōtara stood whole again, as if it had never been cut.
+
+Rātā watched from his hiding place, his anger melting into shame. He understood now. He had not asked permission. He had not performed the proper rituals to honour Tāne. He had taken from the forest as if it belonged to him alone – and the forest had fought back.
 
 ---
 
 ## 🙏 Learning Respect
 
-Rātā came out of hiding and apologised. He asked the forest spirits for forgiveness and performed the proper ceremonies. Only then was he allowed to take the tree and build his waka.
+Rātā stepped out from behind the ferns. The forest spirits froze and turned to look at him. Their eyes were bright, like stars. Rātā bowed his head.
 
-The waka he built was strong and swift, and Rātā became a wise leader who always remembered to respect the forest.
+“I am sorry,” he said. “I was proud and in a hurry. I forgot to show respect.”
+
+He knelt beside the tree and spoke a karakia (prayer) – the words his elders had taught him long ago. He asked Tāne for forgiveness and promised to never again take from the forest without gratitude.
+
+The spirits nodded. One of them, an old bird with feathers like moss, spoke: “The forest gives, but it also expects. Remember this, chief.”
+
+Rātā stayed in the forest for the rest of the day. He gathered stones and built a small altar at the base of the tree. He offered a gift – a piece of pounamu (greenstone) from his own necklace. Only then did the spirits disappear, and the forest became quiet again.
+
+---
+
+## 🛶 The Waka Is Built
+
+The next morning, Rātā returned with his people. Together, they performed the proper ceremonies. They thanked Tāne, sang the sacred chants, and asked for the tree’s blessing. Only then did they begin to cut.
+
+This time, the work was joyful. The tree seemed to give itself willingly. The wood was strong and smooth, and the waka took shape faster than anyone expected. When it was finished, it was the finest canoe anyone had ever seen – swift as a dolphin and steady as the land itself.
+
+Rātā named the waka **Te Ranga-a-Tāne** (The Gathering of Tāne), to honour the forest and its guardians. He became a wise and humble chief, and he always taught his people: “Before you take, ask. Before you use, give thanks. The forest is not ours – we are part of it.”
 
 ---
 
@@ -41,7 +71,9 @@ This story reminds us:
 
 > We must ask permission before taking from nature.  
 > Respecting the forest and its guardians is important.  
-> When we make mistakes, we can learn and do better.
+> When we make mistakes, we can learn and do better.  
+> The natural world has its own rules, and we are guests within it.  
+> Humility and gratitude turn conflict into friendship.
 
 ---
 
@@ -57,6 +89,9 @@ This story reminds us:
 | **rituals** | ceremonies or customs |
 | **guardians** | protectors |
 | **magnificent** | very beautiful or grand |
+| **adze** | a tool like an axe, used for cutting wood |
+| **karakia** | a prayer or chant |
+| **pounamu** | greenstone, a treasured stone in Māori culture |
 
 ---
 
@@ -64,10 +99,11 @@ This story reminds us:
   <summary><strong style="cursor: pointer; font-size: 22px; color: #ff6b6b;">❓ Reading Questions (click to open)</strong></summary>
 
   <br>
-  1. What did Rātā want to build? <br>
-  2. What kept happening to the tree after Rātā cut it? <br>
-  3. Who was putting the tree back? <br>
-  4. What did Rātā do to fix his mistake? <br>
-  5. What lesson can we learn from this story?
+  1. What did Rātā want to build, and why was it important to him? <br>
+  2. What kept happening to the tree after Rātā cut it down? <br>
+  3. Who was putting the tree back, and why did they do it? <br>
+  4. How did Rātā feel when he saw the forest spirits? <br>
+  5. What did Rātā do to make things right? <br>
+  6. What lesson can we learn from this story about how we treat nature?
 
 </details>
