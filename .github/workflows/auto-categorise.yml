@@ -1,0 +1,30 @@
+name: Auto-categorise stories
+
+on:
+  push:
+    branches: [ main, master ]   # runs when you push to main or master
+  workflow_dispatch:             # allows you to run it manually from GitHub Actions tab
+
+jobs:
+  categorise:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run categorisation script
+        run: |
+          python .github/scripts/auto_categorise.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _posts/
+          git diff --staged --quiet || git commit -m "Auto-categorise posts based on content"
+          git push
