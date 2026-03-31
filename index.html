@@ -17,13 +17,12 @@ title: "Storybook | Tales from Greece and Aotearoa"
   <meta property="og:description" content="A collection of Greek myths and Māori legends, retold as stories for kids. All stories are AI-generated.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <!-- Replace with a real image if available -->
   <meta property="og:image" content="{{ '/assets/images/og-storybook.jpg' | absolute_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=Playfair+Display:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
   <style>
-    /* CSS Custom Properties (variables) */
+    /* CSS Custom Properties */
     :root {
       --color-bg: #fef7e8;
       --color-bg-card: white;
@@ -219,7 +218,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
     .story-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.8rem;
+      gap: 1.5rem;
     }
     .story-card {
       background: var(--color-bg-card);
@@ -255,23 +254,23 @@ title: "Storybook | Tales from Greece and Aotearoa"
       background: linear-gradient(145deg, #fae2c6, #faf0e2);
     }
     .card-content {
-      padding: 1.2rem 1.4rem 1.4rem;
+      padding: 1rem 1.2rem 1.2rem;
     }
     .story-title {
       font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 600;
       line-height: 1.3;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.25rem;
       color: var(--color-text-primary);
+      /* Single line truncation */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+    /* Remove the "Read tale →" paragraph to save space */
     .story-card p {
-      font-size: 0.85rem;
-      color: #7c6650;
-      margin-top: 0.3rem;
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      display: none;
     }
     .no-results {
       text-align: center;
@@ -293,9 +292,9 @@ title: "Storybook | Tales from Greece and Aotearoa"
     @media (max-width: 640px) {
       body { padding: 1rem; }
       .header h1 { font-size: 2.4rem; }
-      .story-grid { gap: 1.2rem; }
-      .card-content { padding: 1rem; }
-      .story-title { font-size: 1.2rem; }
+      .story-grid { gap: 1rem; }
+      .card-content { padding: 0.8rem 1rem; }
+      .story-title { font-size: 1.1rem; }
     }
   </style>
 </head>
@@ -352,20 +351,23 @@ title: "Storybook | Tales from Greece and Aotearoa"
   </div>
 
   <script>
-    // ------------------------------------------------------------
-    // Data: all posts from Jekyll are injected as a JavaScript array
-    // Emoji is precomputed in Liquid for better performance.
-    // ------------------------------------------------------------
+    // Helper to normalize category: lowercase and remove diacritics (e.g., Māori -> maori)
+    function normalizeCategory(cat) {
+      if (!cat) return 'unknown';
+      return cat.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    // Data: all posts from Jekyll injected as a JavaScript array
     const stories = [
       {% for post in site.posts %}
         {
           title: {{ post.title | jsonify }},
           url: {{ post.url | relative_url | jsonify }},
-          category: {{ post.category | default: "unknown" | jsonify }},
+          rawCategory: {{ post.category | default: "unknown" | jsonify }},
+          category: normalizeCategory({{ post.category | default: "unknown" | jsonify }}),
           emoji: (function(){
-            // Emoji mapping (only used during build)
             const titleLower = {{ post.title | downcase | jsonify }};
-            const category = {{ post.category | default: "unknown" | jsonify }};
+            const category = normalizeCategory({{ post.category | default: "unknown" | jsonify }});
             if (category === "maori") {
               if (titleLower.includes('rona')) return '🌙';
               if (titleLower.includes('kiwi')) return '🦉';
@@ -426,7 +428,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
       const searchText = filterInput.value.toLowerCase().trim();
       let filtered = stories;
 
-      // Category filter
+      // Category filter (using normalized category strings)
       if (currentCategory !== 'all') {
         filtered = filtered.filter(s => s.category === currentCategory);
       }
@@ -448,7 +450,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
         <a href="${story.url}" class="story-card">
           <div class="card-illustration" aria-hidden="true">${story.emoji}</div>
           <div class="card-content">
-            <h2 class="story-title">${escapeHtml(story.title)}</h2>
+            <div class="story-title" title="${escapeHtml(story.title)}">${escapeHtml(story.title)}</div>
           </div>
         </a>
       `).join('');
@@ -491,9 +493,8 @@ title: "Storybook | Tales from Greece and Aotearoa"
       render();
     });
 
-    // Random story: pick a random story from the filtered set (or all if filter active)
+    // Random story: pick a random story from the filtered set
     randomBtn.addEventListener('click', () => {
-      // Temporarily get the current filtered stories (same logic as render)
       const searchText = filterInput.value.toLowerCase().trim();
       let available = stories;
       if (currentCategory !== 'all') {
