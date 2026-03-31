@@ -12,19 +12,40 @@ title: "Storybook | Tales from Greece and Aotearoa"
   <title>Storybook | Tales from Greece and Aotearoa</title>
   <meta name="description" content="A collection of Greek myths and Māori legends, retold as stories for kids. All stories are AI-generated.">
   <meta name="theme-color" content="#f9f3e6">
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Storybook | Tales from Greece and Aotearoa">
+  <meta property="og:description" content="A collection of Greek myths and Māori legends, retold as stories for kids. All stories are AI-generated.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <!-- Replace with a real image if available -->
+  <meta property="og:image" content="{{ '/assets/images/og-storybook.jpg' | absolute_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=Playfair+Display:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
   <style>
+    /* CSS Custom Properties (variables) */
+    :root {
+      --color-bg: #fef7e8;
+      --color-bg-card: white;
+      --color-text-primary: #2c241a;
+      --color-text-secondary: #5e4b34;
+      --color-accent: #d87c2a;
+      --color-accent-dark: #b45f2b;
+      --color-border: #eeddbb;
+      --color-shadow: rgba(0,0,0,0.05);
+      --border-radius-card: 28px;
+      --border-radius-btn: 40px;
+      --transition-default: 0.2s ease;
+    }
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      background: #fef7e8;
+      background: var(--color-bg);
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      color: #2c241a;
+      color: var(--color-text-primary);
       line-height: 1.5;
       padding: 2rem 1.5rem;
     }
@@ -32,7 +53,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
       position: absolute;
       top: -40px;
       left: 0;
-      background: #b45f2b;
+      background: var(--color-accent-dark);
       color: white;
       padding: 0.5rem 1rem;
       text-decoration: none;
@@ -53,7 +74,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
       font-family: 'Playfair Display', serif;
       font-size: 3.2rem;
       font-weight: 700;
-      background: linear-gradient(135deg, #a55314, #d87c2a);
+      background: linear-gradient(135deg, #a55314, var(--color-accent));
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -62,35 +83,35 @@ title: "Storybook | Tales from Greece and Aotearoa"
     }
     .tagline {
       font-size: 1.2rem;
-      color: #5e4b34;
+      color: var(--color-text-secondary);
       margin-bottom: 1rem;
-      border-bottom: 2px solid #eeddbb;
+      border-bottom: 2px solid var(--color-border);
       display: inline-block;
       padding-bottom: 0.3rem;
     }
     .description {
       max-width: 650px;
       margin: 0 auto;
-      color: #5e4b34;
+      color: var(--color-text-secondary);
       background: #fff6ea;
       padding: 0.8rem 1.5rem;
       border-radius: 60px;
       display: inline-block;
       font-size: 0.95rem;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      box-shadow: 0 1px 2px var(--color-shadow);
     }
     .github-link {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      background: #2c241a;
-      color: #fef7e8;
+      background: var(--color-text-primary);
+      color: var(--color-bg);
       padding: 0.5rem 1.2rem;
-      border-radius: 40px;
+      border-radius: var(--border-radius-btn);
       text-decoration: none;
       font-weight: 500;
       margin-top: 1rem;
-      transition: background 0.2s ease;
+      transition: background var(--transition-default);
     }
     .github-link:hover { background: #4a3727; }
     .filter-section {
@@ -106,6 +127,16 @@ title: "Storybook | Tales from Greece and Aotearoa"
       width: 100%;
       max-width: 320px;
     }
+    .search-box label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
     .search-box input {
       width: 100%;
       padding: 0.9rem 1rem 0.9rem 2.8rem;
@@ -114,12 +145,12 @@ title: "Storybook | Tales from Greece and Aotearoa"
       font-size: 1rem;
       font-family: 'Inter', sans-serif;
       background: white;
-      transition: all 0.2s;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      transition: all var(--transition-default);
+      box-shadow: 0 1px 4px var(--color-shadow);
     }
     .search-box input:focus {
       outline: none;
-      border-color: #d87c2a;
+      border-color: var(--color-accent);
       box-shadow: 0 0 0 3px rgba(216,124,42,0.2);
     }
     .search-box::before {
@@ -142,20 +173,40 @@ title: "Storybook | Tales from Greece and Aotearoa"
       background: white;
       border: 1px solid #e6d5bd;
       padding: 0.6rem 1.2rem;
-      border-radius: 40px;
+      border-radius: var(--border-radius-btn);
       font-family: 'Inter', sans-serif;
       font-size: 0.9rem;
       font-weight: 500;
-      color: #5e4b34;
+      color: var(--color-text-secondary);
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all var(--transition-default);
     }
     .category-btn.active {
-      background: #d87c2a;
-      border-color: #d87c2a;
+      background: var(--color-accent);
+      border-color: var(--color-accent);
       color: white;
     }
     .category-btn:hover:not(.active) {
+      background: #f5e6d8;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .action-btn {
+      background: white;
+      border: 1px solid #e6d5bd;
+      padding: 0.6rem 1.2rem;
+      border-radius: var(--border-radius-btn);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition-default);
+      color: var(--color-text-secondary);
+    }
+    .action-btn:hover {
       background: #f5e6d8;
     }
     .story-count {
@@ -171,16 +222,20 @@ title: "Storybook | Tales from Greece and Aotearoa"
       gap: 1.8rem;
     }
     .story-card {
-      background: white;
-      border-radius: 28px;
+      background: var(--color-bg-card);
+      border-radius: var(--border-radius-card);
       overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px var(--color-shadow);
+      transition: transform var(--transition-default), box-shadow var(--transition-default);
       text-decoration: none;
       color: inherit;
       display: flex;
       flex-direction: column;
       border: 1px solid #f1e5d4;
+    }
+    .story-card:focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 2px;
     }
     .story-card:hover {
       transform: translateY(-5px);
@@ -194,7 +249,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
       align-items: center;
       justify-content: center;
       font-size: 2.8rem;
-      transition: background 0.2s;
+      transition: background var(--transition-default);
     }
     .story-card:hover .card-illustration {
       background: linear-gradient(145deg, #fae2c6, #faf0e2);
@@ -208,7 +263,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
       font-weight: 600;
       line-height: 1.3;
       margin-bottom: 0.4rem;
-      color: #2c241a;
+      color: var(--color-text-primary);
     }
     .story-card p {
       font-size: 0.85rem;
@@ -223,7 +278,7 @@ title: "Storybook | Tales from Greece and Aotearoa"
       grid-column: 1 / -1;
       padding: 3rem;
       background: #fff6ed;
-      border-radius: 40px;
+      border-radius: var(--border-radius-card);
       color: #b97f4b;
     }
     footer {
@@ -231,10 +286,10 @@ title: "Storybook | Tales from Greece and Aotearoa"
       text-align: center;
       font-size: 0.8rem;
       color: #b7a07e;
-      border-top: 1px solid #eeddbb;
+      border-top: 1px solid var(--color-border);
       padding-top: 2rem;
     }
-    footer a { color: #b45f2b; text-decoration: none; }
+    footer a { color: var(--color-accent-dark); text-decoration: none; }
     @media (max-width: 640px) {
       body { padding: 1rem; }
       .header h1 { font-size: 2.4rem; }
@@ -260,12 +315,17 @@ title: "Storybook | Tales from Greece and Aotearoa"
 
     <div class="filter-section">
       <div class="search-box">
+        <label for="storyFilter">Search stories</label>
         <input type="text" id="storyFilter" placeholder="Search for a story..." aria-label="Filter stories by title">
       </div>
       <div class="category-buttons">
-        <button class="category-btn active" data-category="all">🌍 All Stories</button>
-        <button class="category-btn" data-category="greek">🏛️ Greek Myths</button>
-        <button class="category-btn" data-category="maori">🌿 Māori Legends</button>
+        <button class="category-btn active" data-category="all" aria-pressed="true">🌍 All Stories</button>
+        <button class="category-btn" data-category="greek" aria-pressed="false">🏛️ Greek Myths</button>
+        <button class="category-btn" data-category="maori" aria-pressed="false">🌿 Māori Legends</button>
+      </div>
+      <div class="action-buttons">
+        <button id="clearFiltersBtn" class="action-btn" aria-label="Clear all filters">✖️ Clear filters</button>
+        <button id="randomStoryBtn" class="action-btn" aria-label="Random story">🎲 Random story</button>
       </div>
     </div>
     <div class="story-count" id="storyCount" aria-live="polite"></div>
@@ -274,6 +334,17 @@ title: "Storybook | Tales from Greece and Aotearoa"
       <div class="story-grid" id="storyGrid"></div>
     </main>
 
+    <noscript>
+      <div style="margin: 2rem 0; padding: 1rem; background: #fff6ea; border-radius: 1rem;">
+        <p>📖 Your browser does not support JavaScript. Here are all the stories:</p>
+        <ul>
+          {% for post in site.posts %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.category | default: "unknown" }})</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </noscript>
+
     <footer>
       <p>🌿 A collection of ancient tales from Greece and Aotearoa. Explore, read, and enjoy.<br>
       Inspired by timeless stories — built with ❤️ for storytelling.</p>
@@ -281,78 +352,74 @@ title: "Storybook | Tales from Greece and Aotearoa"
   </div>
 
   <script>
-    // -------------------------------
+    // ------------------------------------------------------------
     // Data: all posts from Jekyll are injected as a JavaScript array
-    // This is built using liquid to ensure correct titles, URLs, and categories.
-    // -------------------------------
+    // Emoji is precomputed in Liquid for better performance.
+    // ------------------------------------------------------------
     const stories = [
       {% for post in site.posts %}
         {
           title: {{ post.title | jsonify }},
           url: {{ post.url | relative_url | jsonify }},
           category: {{ post.category | default: "unknown" | jsonify }},
-          emoji: getEmojiByTitle({{ post.title | jsonify }}, {{ post.category | default: "unknown" | jsonify }})
+          emoji: (function(){
+            // Emoji mapping (only used during build)
+            const titleLower = {{ post.title | downcase | jsonify }};
+            const category = {{ post.category | default: "unknown" | jsonify }};
+            if (category === "maori") {
+              if (titleLower.includes('rona')) return '🌙';
+              if (titleLower.includes('kiwi')) return '🦉';
+              if (titleLower.includes('māui') || titleLower.includes('maui')) return '🪢';
+              if (titleLower.includes('tāne') || titleLower.includes('tane')) return '🌳';
+              if (titleLower.includes('hinemoa')) return '🛶';
+              if (titleLower.includes('matariki')) return '✨';
+              if (titleLower.includes('kupe')) return '⛵';
+              if (titleLower.includes('hatupatu')) return '🏃';
+              if (titleLower.includes('tāwhirimātea')) return '🌬️';
+              if (titleLower.includes('pōhutukawa')) return '🌸';
+              if (titleLower.includes('paikea')) return '🐋';
+              if (titleLower.includes('taniwha')) return '🐉';
+              if (titleLower.includes('aoraki')) return '🏔️';
+              if (titleLower.includes('pounamu')) return '💚';
+              return '🌿';
+            }
+            // Greek emojis
+            if (titleLower.includes('apollo')) return '🌞';
+            if (titleLower.includes('arachne')) return '🕷️';
+            if (titleLower.includes('artemis')) return '🏹';
+            if (titleLower.includes('atalanta')) return '🍎';
+            if (titleLower.includes('athena')) return '🦉';
+            if (titleLower.includes('bellerophon')) return '🐎';
+            if (titleLower.includes('callisto')) return '🐻';
+            if (titleLower.includes('daedalus') || titleLower.includes('icarus')) return '🕊️';
+            if (titleLower.includes('demeter') || titleLower.includes('persephone')) return '🌾';
+            if (titleLower.includes('flood')) return '🌊';
+            if (titleLower.includes('echo') || titleLower.includes('narcissus')) return '🌸';
+            if (titleLower.includes('heracles') || titleLower.includes('hercules')) return '💪';
+            if (titleLower.includes('hermes')) return '👟';
+            if (titleLower.includes('iris')) return '🌈';
+            if (titleLower.includes('midas')) return '👑';
+            if (titleLower.includes('odysseus')) return '⛵';
+            if (titleLower.includes('orpheus')) return '🎵';
+            if (titleLower.includes('pandora')) return '📦';
+            if (titleLower.includes('perseus')) return '⚔️';
+            if (titleLower.includes('phaethon')) return '☀️';
+            if (titleLower.includes('prometheus')) return '🔥';
+            if (titleLower.includes('sisyphus')) return '⛰️';
+            if (titleLower.includes('trojan horse')) return '🐴';
+            if (titleLower.includes('theseus')) return '🏛️';
+            return '📖';
+          })()
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
-
-    // Helper: assign a cute emoji based on title and category
-    function getEmojiByTitle(title, category) {
-      const lower = title.toLowerCase();
-      // Māori specific
-      if (category === "maori") {
-        if (lower.includes('rona')) return '🌙';
-        if (lower.includes('kiwi')) return '🦉';
-        if (lower.includes('māui') || lower.includes('maui')) return '🪢';
-        if (lower.includes('tāne') || lower.includes('tane')) return '🌳';
-        if (lower.includes('hinemoa')) return '🛶';
-        if (lower.includes('matariki')) return '✨';
-        if (lower.includes('kupe')) return '⛵';
-        if (lower.includes('hatupatu')) return '🏃';
-        if (lower.includes('tāwhirimātea')) return '🌬️';
-        if (lower.includes('pōhutukawa')) return '🌸';
-        if (lower.includes('paikea')) return '🐋';
-        if (lower.includes('taniwha')) return '🐉';
-        if (lower.includes('aoraki')) return '🏔️';
-        if (lower.includes('pounamu')) return '💚';
-        return '🌿';
-      }
-      // Greek emojis
-      if (lower.includes('apollo')) return '🌞';
-      if (lower.includes('arachne')) return '🕷️';
-      if (lower.includes('artemis')) return '🏹';
-      if (lower.includes('atalanta')) return '🍎';
-      if (lower.includes('athena')) return '🦉';
-      if (lower.includes('bellerophon')) return '🐎';
-      if (lower.includes('callisto')) return '🐻';
-      if (lower.includes('daedalus') || lower.includes('icarus')) return '🕊️';
-      if (lower.includes('demeter') || lower.includes('persephone')) return '🌾';
-      if (lower.includes('flood')) return '🌊';
-      if (lower.includes('echo') || lower.includes('narcissus')) return '🌸';
-      if (lower.includes('heracles') || lower.includes('hercules')) return '💪';
-      if (lower.includes('hermes')) return '👟';
-      if (lower.includes('iris')) return '🌈';
-      if (lower.includes('midas')) return '👑';
-      if (lower.includes('odysseus')) return '⛵';
-      if (lower.includes('orpheus')) return '🎵';
-      if (lower.includes('pandora')) return '📦';
-      if (lower.includes('perseus')) return '⚔️';
-      if (lower.includes('phaethon')) return '☀️';
-      if (lower.includes('prometheus')) return '🔥';
-      if (lower.includes('sisyphus')) return '⛰️';
-      if (lower.includes('trojan horse')) return '🐴';
-      if (lower.includes('theseus')) return '🏛️';
-      return '📖';
-    }
-
-    // For stories that were rendered on the server, we already have emoji.
-    // But we need to add emoji for each story because liquid computed it above.
-    // The array already includes emoji from the liquid loop, so we can just use it.
 
     // DOM elements
     const grid = document.getElementById('storyGrid');
     const filterInput = document.getElementById('storyFilter');
     const countSpan = document.getElementById('storyCount');
+    const clearBtn = document.getElementById('clearFiltersBtn');
+    const randomBtn = document.getElementById('randomStoryBtn');
     let currentCategory = 'all';
 
     function render() {
@@ -379,10 +446,9 @@ title: "Storybook | Tales from Greece and Aotearoa"
 
       grid.innerHTML = filtered.map(story => `
         <a href="${story.url}" class="story-card">
-          <div class="card-illustration">${story.emoji}</div>
+          <div class="card-illustration" aria-hidden="true">${story.emoji}</div>
           <div class="card-content">
-            <div class="story-title">${escapeHtml(story.title)}</div>
-            <p>📖 Read tale →</p>
+            <h2 class="story-title">${escapeHtml(story.title)}</h2>
           </div>
         </a>
       `).join('');
@@ -397,15 +463,48 @@ title: "Storybook | Tales from Greece and Aotearoa"
       });
     }
 
+    // Update aria-pressed on category buttons
+    function updateCategoryButtons() {
+      const btns = document.querySelectorAll('.category-btn');
+      btns.forEach(btn => {
+        const isActive = btn.dataset.category === currentCategory;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+    }
+
     // Set up category button listeners
     const categoryBtns = document.querySelectorAll('.category-btn');
     categoryBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         currentCategory = btn.dataset.category;
-        categoryBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+        updateCategoryButtons();
         render();
       });
+    });
+
+    // Clear filters: reset search input and category to 'all'
+    clearBtn.addEventListener('click', () => {
+      filterInput.value = '';
+      currentCategory = 'all';
+      updateCategoryButtons();
+      render();
+    });
+
+    // Random story: pick a random story from the filtered set (or all if filter active)
+    randomBtn.addEventListener('click', () => {
+      // Temporarily get the current filtered stories (same logic as render)
+      const searchText = filterInput.value.toLowerCase().trim();
+      let available = stories;
+      if (currentCategory !== 'all') {
+        available = available.filter(s => s.category === currentCategory);
+      }
+      if (searchText !== '') {
+        available = available.filter(s => s.title.toLowerCase().includes(searchText));
+      }
+      if (available.length === 0) return;
+      const randomIndex = Math.floor(Math.random() * available.length);
+      window.location.href = available[randomIndex].url;
     });
 
     // Search input with debounce
