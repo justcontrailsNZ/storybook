@@ -1,3 +1,8 @@
+---
+# This is the layout file for story posts
+# It assumes a post has a `title` and `content` (the story text)
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,19 +22,47 @@
         }
         .story-container {
             background: white;
-            max-width: 800px;
-            width: 90%;
-            padding: 40px;
+            max-width: 1200px;  /* Increased to accommodate side images */
+            width: 95%;
+            padding: 20px;
             border-radius: 20px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.1);
             margin-top: 20px;
+        }
+        .three-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 140px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 3;
+            min-width: 250px;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .sidebar img:hover {
+            transform: scale(1.02);
         }
         h1 {
             color: #ff6b6b; 
             text-align: center;
             font-size: 40px;
+            margin-top: 0;
         }
-        .story-image {
+        /* Optional: keep the top image if desired */
+        .top-image {
             width: 100%;
             max-height: 400px;
             object-fit: cover;
@@ -73,39 +106,77 @@
             font-weight: bold;
             font-size: 18px;
         }
+        /* Responsive: stack columns on small screens */
+        @media (max-width: 800px) {
+            .three-columns {
+                flex-direction: column;
+            }
+            .sidebar {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .sidebar img {
+                width: calc(50% - 10px);
+                max-width: 200px;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <div class="story-container">
-        <h1>{{ page.title }}</h1>
-        
-        <!-- NEW IMAGE LINK -->
-        <img src="https://image.pollinations.ai/prompt/A%20cute%20childrens%20storybook%20illustration%20of%20{{ page.title | cgi_escape }}" alt="Illustration of {{ page.title }}" class="story-image">
+<div class="story-container">
+    <h1>{{ page.title }}</h1>
 
-        <div class="controls">
-            <button onclick="changeTextSize(4)">Make Text Bigger ➕</button>
-            <button onclick="changeTextSize(-4)">Make Text Smaller ➖</button>
-        </div>
+    <!-- Optional: top image (comment out if you don't want it) -->
+    <img src="https://image.pollinations.ai/prompt/A%20cute%20childrens%20storybook%20illustration%20of%20{{ page.title | cgi_escape }}" alt="Illustration of {{ page.title }}" class="top-image">
 
-        <div class="story-content" id="story-text">
-            {{ content }}
-        </div>
-
-        <a href="{{ site.baseurl }}/" class="back-link">⬅ Back to Home</a>
+    <div class="controls">
+        <button onclick="changeTextSize(4)">Make Text Bigger ➕</button>
+        <button onclick="changeTextSize(-4)">Make Text Smaller ➖</button>
     </div>
 
-    <script>
-        const storyText = document.getElementById('story-text');
-        let currentSize = 20; 
+    <div class="three-columns">
+        <!-- Left sidebar: 2 images -->
+        <div class="sidebar">
+            {% assign left_prompts = "scene 1, scene 2" | split: ", " %}
+            {% for prompt in left_prompts %}
+                {% assign image_prompt = "A cute children's storybook illustration of " | append: page.title | append: " " | append: prompt | cgi_escape %}
+                <img src="https://image.pollinations.ai/prompt/{{ image_prompt }}" alt="{{ page.title }} - {{ prompt }}" loading="lazy">
+            {% endfor %}
+        </div>
 
-        function changeTextSize(change) {
-            currentSize += change;
-            if (currentSize > 60) currentSize = 60;
-            if (currentSize < 14) currentSize = 14;
-            storyText.style.fontSize = currentSize + 'px';
-        }
-    </script>
+        <!-- Main story text -->
+        <div class="main-content">
+            <div class="story-content" id="story-text">
+                {{ content }}
+            </div>
+        </div>
+
+        <!-- Right sidebar: 2 images -->
+        <div class="sidebar">
+            {% assign right_prompts = "scene 3, scene 4" | split: ", " %}
+            {% for prompt in right_prompts %}
+                {% assign image_prompt = "A cute children's storybook illustration of " | append: page.title | append: " " | append: prompt | cgi_escape %}
+                <img src="https://image.pollinations.ai/prompt/{{ image_prompt }}" alt="{{ page.title }} - {{ prompt }}" loading="lazy">
+            {% endfor %}
+        </div>
+    </div>
+
+    <a href="{{ site.baseurl }}/" class="back-link">⬅ Back to Home</a>
+</div>
+
+<script>
+    const storyText = document.getElementById('story-text');
+    let currentSize = 20; 
+
+    function changeTextSize(change) {
+        currentSize += change;
+        if (currentSize > 60) currentSize = 60;
+        if (currentSize < 14) currentSize = 14;
+        storyText.style.fontSize = currentSize + 'px';
+    }
+</script>
 
 </body>
 </html>
