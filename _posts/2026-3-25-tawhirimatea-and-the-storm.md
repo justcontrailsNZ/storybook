@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tāwhirimātea and the Storm"
+category: Maori
 ---
 
 # 🌬️⛈️ Tāwhirimātea and the Storm ⛈️🌬️
