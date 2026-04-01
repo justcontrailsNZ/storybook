@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Odysseus and the Cyclops"
+category: Greek
 ---
 
 
