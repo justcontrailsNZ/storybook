@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Rātā and the Waka"
+category: Maori
 ---
 
 # 🪓🌳 Rātā and the Waka 🌳🪓
