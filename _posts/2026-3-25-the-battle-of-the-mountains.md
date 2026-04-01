@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Battle of the Mountains"
+category: Maori
 ---
 
 # 🏔️⚔️ The Battle of the Mountains ⚔️🏔️
