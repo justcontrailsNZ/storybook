@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hatupatu and the Birdwoman"
+category: Maori
 ---
 
 # 🏃‍♂️🐦 Hatupatu and the Birdwoman 🐦🏃‍♂️
