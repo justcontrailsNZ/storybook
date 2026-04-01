@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of Pounamu"
+category: Maori
 ---
 
 # 💚🗡️ The Legend of Pounamu 🗡️💚
