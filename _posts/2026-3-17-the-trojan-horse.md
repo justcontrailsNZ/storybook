@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Trojan Horse"
+category: Greek
 ---
 
 
