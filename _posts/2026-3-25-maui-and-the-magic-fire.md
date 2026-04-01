@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Māui and the Magic Fire"
+category: Maori
 ---
 
 # 🔥🌱 Māui and the Magic Fire 🌱🔥
