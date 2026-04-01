@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Arachne and the Weaving Contest"
+category: Greek
 ---
 
 # 🧵🕷️ Arachne and the Weaving Contest 🧵🕷️
