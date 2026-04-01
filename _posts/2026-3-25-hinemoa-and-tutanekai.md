@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hinemoa and Tūtānekai"
+category: Maori
 ---
 
 # 🛶💖 Hinemoa and Tūtānekai 💖🛶
