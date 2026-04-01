@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Phaethon and the Chariot of the Sun"
+category: Greek
 ---
 
 
