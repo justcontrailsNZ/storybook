@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Athena and Poseidon Name a City"
+category: Greek
 ---
 
 # ⚡🦉 Athena and Poseidon Name a City ⚡🦉
