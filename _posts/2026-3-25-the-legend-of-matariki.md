@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of Matariki"
+category: Maori
 ---
 
 # ✨🌟 The Legend of Matariki 🌟✨
