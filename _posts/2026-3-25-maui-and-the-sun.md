@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Māui and the Sun"
+category: Maori
 ---
 
 # ☀️🪢 Māui and the Sun 🪢☀️
