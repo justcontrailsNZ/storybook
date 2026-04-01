@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Demeter and Persephone"
+category: Greek
 ---
 
 Long ago, the goddess Demeter watched over farming and harvests. She helped wheat grow tall, fruit ripen on trees, and vegetables sprout in gardens.
