@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Heracles and the Nemean Lion"
+category: Greek
 ---
 
 Long ago, there was a hero named Heracles (some people also call him Hercules). He was famous for being strong, but he also had to do difficult jobs to prove himself.
