@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Apollo and Daphne"
+category: Greek
 ---
 
 # 🌞🏹 The Myth of Apollo and Daphne 🌿🏹
