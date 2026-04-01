@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Heracles and the Hydra"
+category: Greek
 ---
 
 
