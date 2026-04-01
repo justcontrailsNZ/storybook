@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Midas Touch: How Midas Learned to Share"
+category: Greek
 ---
 
 Long ago, after King Midas had already learned that turning everything to gold was a terrible idea, he tried to live more wisely.
