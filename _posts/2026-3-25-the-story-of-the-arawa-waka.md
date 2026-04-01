@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Story of the Arawa Waka"
+category: Maori
 ---
 
 # 🛶🔥 The Story of the Arawa Waka 🔥🛶
