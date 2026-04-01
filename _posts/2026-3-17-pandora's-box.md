@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pandora’s Box "
+category: Greek
 ---
 
 Long ago, the gods created the first woman, named Pandora. She was clever, curious, and full of questions about the world.
