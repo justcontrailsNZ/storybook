@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of Lake Taupō"
+category: Maori
 ---
 
 # 🌋💧 The Legend of Lake Taupō 💧🌋
