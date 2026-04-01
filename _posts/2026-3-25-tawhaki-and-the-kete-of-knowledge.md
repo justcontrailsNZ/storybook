@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tāwhaki and the Kete of Knowledge"
+category: Maori
 ---
 
 # ⚡📜 Tāwhaki and the Kete of Knowledge 📜⚡
