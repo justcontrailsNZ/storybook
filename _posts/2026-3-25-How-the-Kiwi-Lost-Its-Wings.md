@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How the Kiwi Lost Its Wings"
+category: Maori
 ---
 
 # 🦉🌳 How the Kiwi Lost Its Wings 🌳🦉
