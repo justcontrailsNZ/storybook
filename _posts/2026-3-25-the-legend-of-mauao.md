@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of Mauao"
+category: Maori
 ---
 
 # 🏔️🌅 The Legend of Mauao 🌅🏔️
