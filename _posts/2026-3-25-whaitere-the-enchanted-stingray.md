@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Whaitere the Enchanted Stingray"
+category: Maori
 ---
 
 # 🌊✨ Whaitere the Enchanted Stingray ✨🌊
