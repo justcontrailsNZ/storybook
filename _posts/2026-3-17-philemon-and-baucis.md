@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Philemon and Baucis"
+category: Greek
 ---
 
 
