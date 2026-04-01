@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Echo and Narcissus "
+category: Greek
 ---
 
 Long ago, in the hills and forests of Greece, there lived a nymph named Echo. In Greek myths, nymphs are nature spirits who live near mountains, trees, and streams.
