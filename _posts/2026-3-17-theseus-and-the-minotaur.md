@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Theseus and the Minotaur"
+category: Greek
 ---
 
 
