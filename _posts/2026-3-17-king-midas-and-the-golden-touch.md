@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "King Midas and the Golden Touch"
+category: Greek
 ---
 
 
