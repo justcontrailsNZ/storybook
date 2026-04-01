@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Story of the Kaipara Harbour"
+category: Maori
 ---
 
 # 🏖️🐉 The Story of the Kaipara Harbour 🐉🏖️
