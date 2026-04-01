@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Rona and the Moon"
+category: Maori
 ---
 
 # 🌙🌿 Rona and the Moon 🌿🌙
