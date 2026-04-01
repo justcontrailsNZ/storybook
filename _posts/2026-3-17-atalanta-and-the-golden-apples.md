@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Atalanta and the Golden Apples"
+category: Greek
 ---
 
 # 🏃‍♀️🍎 Atalanta and the Golden Apples 🏃‍♀️🍎
