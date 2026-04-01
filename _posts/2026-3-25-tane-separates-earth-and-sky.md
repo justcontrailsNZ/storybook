@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tāne Separates Earth and Sky"
+category: Maori
 ---
 
 # 🌏🌌 Tāne Separates Earth and Sky 🌌🌏
