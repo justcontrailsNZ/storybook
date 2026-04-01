@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Orpheus and Eurydice"
+category: Greek
 ---
 
 Long ago, there was a musician named Orpheus. He played an instrument called a lyre, and his music was so beautiful that people would stop walking just to listen.
