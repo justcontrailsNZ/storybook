@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Māui and Hine-nui-te-pō"
+category: Maori
 ---
 
 # ☠️🔥 Māui and Hine-nui-te-pō 🔥☠️
