@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hermes and the First Lyre"
+category: Greek
 ---
 
 
