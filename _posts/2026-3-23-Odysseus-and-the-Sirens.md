@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Odysseus and the Sirens"
+category: Greek
 ---
 
 Long ago, the hero Odysseus was sailing home across the sea. He had already faced storms and monsters, and he missed his family.
