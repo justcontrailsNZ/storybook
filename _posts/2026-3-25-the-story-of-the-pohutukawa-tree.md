@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Story of the Pohutukawa Tree"
+category: Maori
 ---
 
 # 🌸🌊 The Story of the Pohutukawa Tree 🌊🌸
