@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Deucalion and Pyrrha: The Great Flood"
+category: Greek
 ---
 
 
