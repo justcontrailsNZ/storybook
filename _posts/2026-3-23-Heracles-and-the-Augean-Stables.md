@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Heracles and the Augean Stables"
+category: Greek
 ---
 
 Long ago in Ancient Greece, there was a hero named Heracles. People told stories about his strength, but they also remembered that he could solve problems in clever ways.
