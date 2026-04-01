@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of the Māhuhu-ki-te-rangi Waka"
+category: Maori
 ---
 
 # ☁️⛵ The Legend of the Māhuhu-ki-te-rangi Waka ⛵☁️
