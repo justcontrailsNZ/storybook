@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Paikea and the Whale"
+category: Maori
 ---
 
 # 🐋🌊 Paikea and the Whale 🌊🐋
