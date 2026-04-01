@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Perseus and Medusa"
-category: G
+category: Greek
 ---
 
 
