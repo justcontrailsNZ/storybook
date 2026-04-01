@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pygmalion and the Statue"
+category: Maori
 ---
 
 
