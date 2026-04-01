@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Artemis and Orion"
+category: Greek
 ---
 
 # 🌙🏹 Artemis and Orion 🌙🏹
