@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Perseus and Andromeda"
+category: Greek
 ---
 
 
