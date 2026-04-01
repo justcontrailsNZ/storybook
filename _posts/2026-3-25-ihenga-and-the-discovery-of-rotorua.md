@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ihenga and the Discovery of Rotorua"
+category: Maori
 ---
 
 # 🌋🦎 Ihenga and the Discovery of Rotorua 🦎🌋
