@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Māui and the Giant Fish"
+category: Maori
 ---
 
 # 🎣🐟 Māui and the Giant Fish 🐟🎣
