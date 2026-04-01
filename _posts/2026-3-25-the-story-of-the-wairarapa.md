@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Story of the Wairarapa"
-category: maori
+category: Maori
 ---
 
 # 🌾🌊 The Story of the Wairarapa 🌊🌾
