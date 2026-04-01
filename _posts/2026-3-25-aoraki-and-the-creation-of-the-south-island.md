@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Aoraki and the Creation of the South Island"
+category: Maori
 ---
 
 # 🏔️⛵ Aoraki and the Creation of the South Island ⛵🏔️
