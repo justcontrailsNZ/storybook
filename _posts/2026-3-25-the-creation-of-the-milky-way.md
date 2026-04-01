@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Creation of the Milky Way"
+category: Maori
 ---
 
 # ✨🌌 The Creation of the Milky Way 🌌✨
