@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Iris and the Rainbow Message"
+category: Greek
 ---
 
 Long ago, the Greek people told stories about how the gods sent messages across the world. The gods did not use phones or letters. They used messengers.
