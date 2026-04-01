@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Theseus and the Black Sails"
+category: Greek
 ---
 
 Long ago, after Theseus defeated the Minotaur on Crete, he and the other young people hurried back to their ship. They were tired, but they were free.
