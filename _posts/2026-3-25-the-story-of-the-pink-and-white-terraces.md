@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Story of the Pink and White Terraces"
+category: Maori
 ---
 
 # 🌸🤍 The Story of the Pink and White Terraces 🤍🌸
