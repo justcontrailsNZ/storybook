@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of the Whanganui River"
+category: Maori
 ---
 
 # 🏞️🐉 The Legend of the Whanganui River 🐉🏞️
