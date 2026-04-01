@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bellerophon and Pegasus"
+category: Greek
 ---
 
 
