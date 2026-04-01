@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Kupe and the Giant Wheke"
+category: Maori
 ---
 
 # 🌊🐙 Kupe and the Giant Wheke 🐙🌊
