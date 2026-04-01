@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of the Tararua Ranges"
+category: Maori
 ---
 
 # 🏔️👭 The Legend of the Tararua Ranges 👭🏔️
