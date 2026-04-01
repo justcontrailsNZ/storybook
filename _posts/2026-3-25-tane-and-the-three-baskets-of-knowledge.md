@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tāne and the Three Baskets of Knowledge"
+category: Maori
 ---
 
 # 📚🌿 Tāne and the Three Baskets of Knowledge 🌿📚
